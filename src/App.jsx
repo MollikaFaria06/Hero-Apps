@@ -5,6 +5,8 @@ import NavBar from './components/NavBar/NavBar'
 import Home from './components/Home/Home';
 import Apps from './components/Apps/Apps';
 import Installation from './components/Installation/Installation';
+import Footer from './components/Footer/Footer';
+import Banner from './components/Banner/Banner';
 
 function App() {
 
@@ -18,7 +20,7 @@ function App() {
         <Route path="/installation" element={<Installation />} />
       </Routes>
     </BrowserRouter>
-      
+     <Banner></Banner> 
      
     </>
   )
