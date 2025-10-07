@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm mx-auto max-w-7xl">
+    <div className="navbar bg-base-100 shadow-sm mx-auto p-5 max-w-7xl">
      
       <div className="navbar-start">
         <div className="dropdown">

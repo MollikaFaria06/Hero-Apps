@@ -7,6 +7,7 @@ import Apps from './components/Apps/Apps';
 import Installation from './components/Installation/Installation';
 import Footer from './components/Footer/Footer';
 import Banner from './components/Banner/Banner';
+import States from './components/States/States';
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
         <Route path="/installation" element={<Installation />} />
       </Routes>
     </BrowserRouter>
-     <Banner></Banner> 
+     <Banner> </Banner> 
+     <States></States>
      
     </>
   )
