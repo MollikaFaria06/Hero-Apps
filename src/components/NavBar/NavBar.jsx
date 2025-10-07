@@ -125,7 +125,7 @@ const NavBar = () => {
           href="https://github.com/MollikaFaria06"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn bg-gradient-to-b from-purple-900 to-purple-500 flex items-center gap-2 text-white"
+          className="btn bg-gradient-to-b from-purple-900 to-purple-500 flex items-center gap-2 w-40 text-white"
         >
           <FaGithub className="text-lg" />
           Contribute
