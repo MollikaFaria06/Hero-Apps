@@ -35,11 +35,11 @@ const TrendingApps = () => {
             />
             <h2 className="text-lg font-semibold">{app.title}</h2>
             <div className="flex justify-between ">
-                <div className="flex items-center gap-1 mt-1">
-                <img className="w-5 h-5" src={downloadImg} alt="downloads" />
-                <span className="text-sm text-gray-600">{app.downloads.toLocaleString()}</span>
+                <div className="flex items-center gap-1 bg-gray-100 p-1 rounded-lg mt-1">
+                <img className="w-4 h-4" src={downloadImg} alt="downloads" />
+                <span className="text-sm text-green-500  font-semibold">{app.downloads.toLocaleString()}</span>
                 </div>
-                <p className="text-sm font-medium mt-1">⭐ {app.ratingAvg}</p>
+                <p className="text-sm text-yellow-500 font-medium bg-orange-100 p-1 rounded-lg  mt-1">⭐ {app.ratingAvg}</p>
                 
             </div>
           </div>
@@ -48,8 +48,8 @@ const TrendingApps = () => {
 
       
       <button
-        className="mt-6 px-6 py-2 btn bg-gradient-to-b from-purple-900 to-purple-500  gap-2 text-white"
-        onClick={() => navigate("/all-apps")}
+        className="mt-6 px-6 py-2 btn bg-gradient-to-b from-purple-900 to-purple-500 w-50 gap-2 text-white"
+        onClick={() => navigate("/apps")}
       >
         Show All
       </button>

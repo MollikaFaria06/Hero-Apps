@@ -7,7 +7,7 @@ import linkedinImg from '/src/assets/linkedin.png';
 const Footer = () => {
   return (
     <div className='mt-4 px-4 py-6'>
-      <div className='max-w-6xl mx-auto flex justify-between items-center'>
+      <div className='max-w-7xl mx-auto flex justify-between items-center'>
        
         <div className='flex gap-2 items-center'>
           <img className="w-8 h-8" src="/src/assets/logo.png" alt="Logo" />
@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
 
     
-      <div className='max-w-6xl mx-auto mt-4 border-t border-gray-300 pt-2 text-center'>
+      <div className='max-w-7xl mx-auto mt-4 border-t border-gray-300 pt-2 text-center'>
         <h3>Copyright © 2025 - All rights reserved</h3>
       </div>
     </div>
