@@ -8,12 +8,14 @@ import Footer from './components/Footer/Footer';
 import Banner from './components/Banner/Banner';
 import States from './components/States/States';
 import TrendingApps from './components/TrendingApps/TrendingApps';
+import AppDetails from './components/AppDetails/AppDetails';
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
-
+      <Toaster position="top-right" reverseOrder={false} />
       {/* Main content */}
       <Routes>
         <Route path="/" element={
@@ -25,6 +27,7 @@ function App() {
         } />
         <Route path="/apps" element={<Apps />} />
         <Route path="/installation" element={<Installation />} />
+        <Route path="/app/:id" element={<AppDetails />} />
       </Routes>
 
       <Footer />

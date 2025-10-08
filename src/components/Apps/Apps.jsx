@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Search } from "lucide-react";
+import { useNavigate } from "react-router-dom"; 
 import downloadImg from "/src/assets/icon-downloads.png";
 
 const Apps = () => {
   const [apps, setApps] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     fetch("/apps_data.json")
@@ -13,17 +15,18 @@ const Apps = () => {
       .catch((err) => console.error("Error loading apps:", err));
   }, []);
 
- 
   const filteredApps = apps.filter((app) =>
     app.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  
   const handleShowAll = () => setSearchTerm("");
+
+  const goToAppDetails = (id) => {
+    navigate(`/app/${id}`);
+  };
 
   return (
     <div className="bg-amber-50 min-h-screen px-6 py-10 text-black">
-    
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold mb-2 text-black">Our All Applications</h1>
         <p className="text-lg text-gray-600">
@@ -31,13 +34,11 @@ const Apps = () => {
         </p>
       </div>
 
-     
       <div className="flex flex-col md:flex-row justify-between items-center mb-8">
         <p className="text-gray-900 font-semibold text-xl">
           <span className="font-bold">({filteredApps.length}) Apps Found</span>
         </p>
 
-       
         <div className="relative mt-3 md:mt-0 w-60 md:w-1/4">
           <Search className="absolute left-3 top-2.5 text-gray-500 w-5 h-5" />
           <input
@@ -50,13 +51,13 @@ const Apps = () => {
         </div>
       </div>
 
-      
       {filteredApps.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {filteredApps.map((app) => (
             <div
               key={app.id}
-              className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition"
+              className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer"
+              onClick={() => goToAppDetails(app.id)} 
             >
               <img
                 src={app.image}
@@ -82,14 +83,13 @@ const Apps = () => {
         </p>
       )}
 
-      
       {searchTerm && (
         <div className="text-center">
           <button
             className="mt-6 w-52 px-6 py-2 btn bg-gradient-to-b from-purple-900 to-purple-500 text-white rounded-lg"
             onClick={handleShowAll}
           >
-            Show All
+            Show All Apps
           </button>
         </div>
       )}

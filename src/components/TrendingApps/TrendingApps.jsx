@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"; 
 import downloadImg from '/src/assets/icon-downloads.png'
 
+
 const TrendingApps = () => {
   const [apps, setApps] = useState([]);
   const navigate = useNavigate();
@@ -20,7 +21,6 @@ const TrendingApps = () => {
         Explore All Trending Apps on the Market developed by us
       </h6>
 
-   
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto">
         {apps.map((app) => (
           <div
@@ -34,21 +34,23 @@ const TrendingApps = () => {
               className="w-full h-32 object-contain mb-4"
             />
             <h2 className="text-lg font-semibold">{app.title}</h2>
-            <div className="flex justify-between ">
-                <div className="flex items-center gap-1 bg-gray-100 p-1 rounded-lg mt-1">
+            <div className="flex justify-between">
+              <div className="flex items-center gap-1 bg-gray-100 p-1 rounded-lg mt-1">
                 <img className="w-4 h-4" src={downloadImg} alt="downloads" />
-                <span className="text-sm text-green-500  font-semibold">{app.downloads.toLocaleString()}</span>
-                </div>
-                <p className="text-sm text-yellow-500 font-medium bg-orange-100 p-1 rounded-lg  mt-1">⭐ {app.ratingAvg}</p>
-                
+                <span className="text-sm text-green-500 font-semibold">
+                  {app.downloads.toLocaleString()}
+                </span>
+              </div>
+              <p className="text-sm text-yellow-500 font-medium bg-orange-100 p-1 rounded-lg mt-1">
+                ⭐ {app.ratingAvg}
+              </p>
             </div>
           </div>
         ))}
       </div>
 
-      
       <button
-        className="mt-6 px-6 py-2 btn bg-gradient-to-b from-purple-900 to-purple-500 w-50 gap-2 text-white"
+        className="mt-6 px-6 py-2 btn bg-gradient-to-b from-purple-900 to-purple-500 w-50 gap-2 text-white rounded-lg"
         onClick={() => navigate("/apps")}
       >
         Show All
