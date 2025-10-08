@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
+import navImg from '/src/assets/logo.png';
 
 const NavBar = () => {
   return (
@@ -70,7 +71,7 @@ const NavBar = () => {
 
         
         <div className="flex gap-2 items-center">
-          <img className="w-8 h-8" src="/src/assets/logo.png" alt="Logo" />
+          <img className="w-8 h-8" src={navImg} alt="Logo" />
           <NavLink to="/" className="text-xl font-semibold text-purple-500">
             HERO.IO
           </NavLink>
