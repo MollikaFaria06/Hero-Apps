@@ -1,16 +1,36 @@
-# React + Vite
+# 🌟 HERO.IO — App Store Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**HERO.IO** is a modern web application that displays trending and installed apps in a visually engaging way.  
+Users can explore, install, and manage apps through an interactive interface with real-time feedback and analytics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Home Page** — Displays trending apps with ratings and download stats  
+- **Apps Page** — Shows all available apps with details and filter/sort options  
+- **Installation Page** — Lists installed apps with an uninstall option  
+- **Sort by Downloads** — Sort apps dynamically by download size or count  
+- **Toast Notifications** — For install/uninstall feedback  
+- **Charts & Stats** — Shows app reviews and rating insights  
+- **Responsive UI** — Optimized for mobile and desktop  
+- **Loader Animation** — Smooth loading state during navigation  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Category | Technologies |
+|-----------|--------------|
+| **Frontend Framework** | React.js |
+| **Bundler** | Vite |
+| **Styling** | Tailwind CSS |
+| **UI Components** | DaisyUI, React Icons |
+| **Charts** | Recharts |
+| **Notifications** | React Toastify, React Hot Toast |
+| **Routing** | React Router DOM |
+| **Deployment** | Netlify |
+
+---
+
+✨ *Built with React + Tailwind + Vite by Mollika Faria*
