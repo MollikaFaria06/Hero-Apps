@@ -51,7 +51,7 @@ const Installation = () => {
 
   if (installedApps.length === 0) {
     return (
-      <div className="min-h-screen flex flex-col justify-center items-center text-gray-700 bg-amber-50">
+      <div className="min-h-screen flex flex-col justify-center items-center text-gray-700 bg-purple-200">
         <ToastContainer />
         <h1 className="text-3xl font-bold mb-4">No Installed Apps</h1>
         <p className="text-lg text-gray-600">You haven't installed any apps yet.</p>
