@@ -60,7 +60,7 @@ const Installation = () => {
   }
 
   return (
-    <div className="min-h-screen px-6 py-10 bg-amber-50 text-black">
+    <div className="min-h-screen px-6 py-10 bg-purple-200 text-black">
       <ToastContainer />
 
       

@@ -1,18 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
-import navImg from '/src/assets/logo.png';
+import navImg from "/src/assets/logo.png";
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm mx-auto p-5 max-w-7xl">
-     
+    <div className="navbar bg-white shadow-md lg:shadow-none mx-auto p-5 max-w-7xl">
+      
       <div className="navbar-start">
+        
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-5 w-5 text-gray-700"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -25,18 +26,18 @@ const NavBar = () => {
               />
             </svg>
           </div>
-          
+
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 gap-2 shadow"
+            className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 gap-2 shadow"
           >
             <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-purple-600 font-semibold"
-                    : "hover:text-purple-500"
+                    ? "text-purple-600 font-bold"
+                    : "text-gray-900 hover:text-purple-500"
                 }
               >
                 Home
@@ -47,8 +48,8 @@ const NavBar = () => {
                 to="/apps"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-purple-600 font-semibold"
-                    : "hover:text-purple-500"
+                    ? "text-purple-600 font-bold"
+                    : "text-gray-900 hover:text-purple-500"
                 }
               >
                 Apps
@@ -59,8 +60,8 @@ const NavBar = () => {
                 to="/installation"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-purple-600 font-semibold"
-                    : "hover:text-purple-500"
+                    ? "text-purple-600 font-bold"
+                    : "text-gray-900 hover:text-purple-500"
                 }
               >
                 Installation
@@ -69,16 +70,16 @@ const NavBar = () => {
           </ul>
         </div>
 
-        
+     
         <div className="flex gap-2 items-center">
           <img className="w-8 h-8" src={navImg} alt="Logo" />
-          <NavLink to="/" className="text-xl font-semibold text-purple-500">
+          <NavLink to="/" className="text-xl font-semibold text-purple-600">
             HERO.IO
           </NavLink>
         </div>
       </div>
 
-      
+     
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal gap-8 px-1">
           <li>
@@ -86,8 +87,8 @@ const NavBar = () => {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "text-purple-600 font-semibold border-b-2 border-purple-600 pb-1"
-                  : "text-white hover:text-purple-600 transition-colors"
+                  ? "text-purple-600 font-bold border-b-2 border-purple-600 pb-1"
+                  : "text-gray-900 hover:text-purple-900 transition-colors"
               }
             >
               Home
@@ -98,8 +99,8 @@ const NavBar = () => {
               to="/apps"
               className={({ isActive }) =>
                 isActive
-                  ? "text-purple-600 font-semibold border-b-2 border-purple-600 pb-1"
-                  : "text-white hover:text-purple-600 transition-colors"
+                  ? "text-purple-600 font-bold border-b-2 border-purple-600 pb-1"
+                  : "text-gray-900 hover:text-purple-900 transition-colors"
               }
             >
               Apps
@@ -110,8 +111,8 @@ const NavBar = () => {
               to="/installation"
               className={({ isActive }) =>
                 isActive
-                  ? "text-purple-600 font-semibold border-b-2 border-purple-600 pb-1"
-                  : "text-white hover:text-purple-600 transition-colors"
+                  ? "text-purple-600 font-bold border-b-2 border-purple-600 pb-1"
+                  : "text-gray-900 hover:text-purple-900 transition-colors"
               }
             >
               Installation
@@ -120,13 +121,13 @@ const NavBar = () => {
         </ul>
       </div>
 
-      
+     
       <div className="navbar-end">
         <a
           href="https://github.com/MollikaFaria06"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn bg-gradient-to-b from-purple-900 to-purple-500 flex items-center gap-2 w-40 text-white"
+          className="btn bg-gradient-to-b from-purple-700 to-purple-500 hover:from-purple-800 hover:to-purple-600 flex items-center gap-2 w-40 text-white"
         >
           <FaGithub className="text-lg" />
           Contribute

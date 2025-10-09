@@ -41,7 +41,7 @@ const TrendingApps = () => {
   if (loading) return <Loader />; 
 
   return (
-    <div className="bg-amber-50 text-black text-center py-8 px-4">
+    <div className="bg-purple-200 text-black text-center py-8 px-4">
       <h1 className="text-3xl font-bold mb-2">Trending Apps</h1>
       <h6 className="text-lg font-normal mb-6">
         Explore All Trending Apps on the Market developed by us

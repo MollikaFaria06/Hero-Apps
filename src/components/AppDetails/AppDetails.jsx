@@ -80,7 +80,7 @@ const AppDetails = () => {
 
   if (!app) {
     return (
-      <div className="flex flex-col items-center justify-center bg-amber-50 min-h-screen text-center text-gray-700">
+      <div className="flex flex-col items-center justify-center bg-purple-200 min-h-screen text-center text-gray-700">
         <img src={warningImg} alt="" />
         <h1 className="text-3xl font-bold text-black mt-4 mb-2">
           App Is Not Found!
@@ -105,17 +105,17 @@ const AppDetails = () => {
   const barColors = ["#F59E0B", "#F59E0B", "#F59E0B", "#F59E0B", "#F59E0B"];
 
   return (
-    <div className="min-h-screen p-6 bg-amber-50 text-black">
+    <div className="min-h-screen p-6 bg-purple-200 text-black">
       <ToastContainer />
 
-      <div className="border-b border-gray-300 p-4 flex flex-col md:flex-row gap-6 items-center md:items-start">
+      <div className="border-b border-gray-500 p-4 flex flex-col md:flex-row gap-6 items-center md:items-start">
         <img
           src={app.image}
           alt={app.title}
           className="w-24 h-24 md:w-32 md:h-32 object-contain rounded-lg shadow-md"
         />
         <div className="flex-1">
-          <div className="border-b border-gray-300 pb-4 mb-4">
+          <div className="border-b border-gray-500 pb-4 mb-4">
             <h1 className="text-2xl md:text-3xl font-bold mb-1">{app.title}</h1>
             <p className="text-gray-600 mb-4">
               Developed by{" "}
@@ -148,7 +148,7 @@ const AppDetails = () => {
             onClick={handleInstall}
             className={`px-6 py-2 rounded-lg text-white font-semibold transition duration-200 ${
               installed
-                ? "bg-gray-400 cursor-not-allowed"
+                ? "bg-gray-500 cursor-not-allowed"
                 : "bg-green-600 hover:bg-green-700"
             }`}
           >
@@ -157,7 +157,7 @@ const AppDetails = () => {
         </div>
       </div>
 
-      <div className="mt-10 py-6 border-b border-gray-300">
+      <div className="mt-10 py-6 border-b border-gray-500">
         <h2 className="text-2xl font-bold mb-2">Ratings</h2>
         <ResponsiveContainer width="100%" height={250}>
           <BarChart

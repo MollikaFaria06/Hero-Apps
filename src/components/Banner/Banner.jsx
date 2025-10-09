@@ -5,7 +5,7 @@ import heroImage from '/src/assets/hero.png';
 
 const Banner = () => {
   return (
-    <section className="bg-amber-50 text-black py-0 pt-20">
+    <section className="bg-purple-200 text-black py-0 pt-20">
       <div className="container mx-auto text-center px-4">
        
         <h1 className="text-5xl md:text-5xl font-bold mb-6">

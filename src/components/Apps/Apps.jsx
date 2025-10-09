@@ -43,7 +43,7 @@ const Apps = () => {
   if (loading) return <Loader />;
 
   return (
-    <div className="bg-amber-50 min-h-screen px-6 py-10 text-black">
+    <div className="bg-purple-200 min-h-screen px-6 py-10 text-black">
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold mb-2 text-black">Our All Applications</h1>
         <p className="text-lg text-gray-600">
