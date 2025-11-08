@@ -3,6 +3,8 @@
 **HERO.IO** is a modern web application that displays trending and installed apps in a visually engaging way.  
 Users can explore, install, and manage apps through an interactive interface with real-time feedback and analytics.
 
+ Live URL : https://genuine-beignet-d8e7b4.netlify.app/
+
 ---
 
 ## ✨ Features
