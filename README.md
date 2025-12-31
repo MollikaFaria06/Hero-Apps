@@ -35,4 +35,21 @@ Users can explore, install, and manage apps through an interactive interface wit
 
 ---
 
-✨ *Built with React + Tailwind + Vite by Mollika Faria*
+## 🚀 How to Run Locally
+
+### Clone repo
+- git clone https://github.com/mollikafaria06/Hero-Apps.git
+
+### Frontend
+- cd Hero-Apps
+- npm install
+- npm run dev
+
+---
+
+### 👨‍💻 Author
+
+-  Faria Alam
+-  Mern Stack Developer
+-  📧 Email:  fariamk007@gmail.com
+-  🔗 GitHub: https://github.com/mollikafaria06
